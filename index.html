@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/user.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Vivek's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Vivek.</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>      
+      <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Resume</button>
+
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Vivek.</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Vivek Kumar</h1>
+        <p class="section__text__p2">Full Stack Developer</p>
+        <div id="socials-container">
+          <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/volatileviv/'"
+          />
+          <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/Volatile-Viv'"
+          />
+          <img
+              src="./assets/twitter.png"
+              alt="My Twitter profile"
+              class="icon"
+              onclick="location.href='https://twitter.com/volatileviv'"
+          />
+          <img
+              src="./assets/instagram.png"
+              alt="My Instagram profile"
+              class="icon"
+              onclick="location.href='https://www.instagram.com/_vivek.kr__'"
+          />
+      </div>
+        </div>
+      </div>
+      <div class="section__pic-container">
+        <img src="./assets/profile.png" alt="picture" />
+      </div>
+
+      <div class="resume-btn">
+      <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Resume</button>
+
+      </div>
+    </section>
+
+    <section id="about">
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Full Stack Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelor of Technology<br />Computer Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm an experienced full-stack web developer skilled in the MERN
+              stack. My programming journey began at age 12, sparking a lifelong
+              passion for coding. Proficient in front-end and back-end
+              development, I excel in problem-solving. Leveraging technologies
+              like React, Node.js, Express, and MongoDB, I build robust web
+              applications. I stay updated with emerging tech to adapt swiftly
+              to industry trends.
+            </p>
+            
+          
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+    
+  
+    <section id="skills">
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skills-sub-title">Frontend Development</h2>
+            <div class="article-container">
+                <div class="skill-individual">
+                  <i class="fa-brands fa-html5 fa-lg"></i>
+                  <h3>HTML</h3>
+                </div>
+                
+                <div class="skill-individual">
+                  <i class="fa-brands fa-css3-alt fa-lg"></i>
+                  <h3>CSS</h3>
+                </div>
+
+                
+                <div class="skill-individual">
+                  <i class="fa-brands fa-js fa-lg"></i>
+                  <h3>Javascript</h3>
+                </div>
+
+                <div class="skill-individual">
+                  <i class="fa-brands fa-css3 fa-lg"></i>
+                  <h3>Tailwind CSS</h3>
+                </div>
+
+                <div class="skill-individual">
+                  <i class="fa-brands fa-react fa-lg"></i>
+                  <h3>React</h3>
+                </div>
+                
+                <div class="skill-individual">
+                  <i class="fa-thin fa-n fa-lg"></i>
+                  <h3>Next JS</h3>
+                </div>
+                
+                <div class="skill-individual">
+                  <i class="fa-brands fa-bootstrap fa-lg"></i>
+                  <h3>Bootstrap</h3>
+                </div>
+
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skills-sub-title">Backend Development</h2>
+            <div class="article-container">
+                <div class="skill-individual">
+                  <i class="fa-brands fa-python fa-lg"></i>
+                  <h3>Python</h3>
+                </div>
+
+                <div class="skill-individual">
+                  <i class="fa-brands fa-java fa-lg"></i>
+                  <h3>Java</h3>
+                </div>
+
+                <div class="skill-individual">
+                  <i class="fa-solid fa-database fa-lg"></i>
+                  <h3>MongoDB</h3>
+                </div>
+              
+                <div class="skill-individual">
+                  <i class="fa-brands fa-node fa-lg"></i>
+                  <h3>Node JS</h3>
+                </div>
+                
+                <div class="skill-individual">
+                  <i class="fa-brands fa-node-js fa-lg"></i>
+                  <h3>Express JS</h3>
+                </div>
+                
+                <div class="skill-individual">
+                  <i class="fa-brands fa-git fa-lg"></i>
+                  <h3>Git</h3>
+                </div>
+                
+                <div class="skill-individual">
+                  <i class="fa-solid fa-code fa-lg"></i>
+                  <h3>AppWrite</h3>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <h1 class="title">Projects</h1>
+      <div class="projects-container">
+        <div class="project">
+          <div class="project-details">
+
+          <div class="project-img">
+            <img src="assets/project-1.png" alt="project-1">
+          </div>
+          <div class="project-sub-details">
+            <h3>E-Commerce Website</h3>
+            <p>
+
+              <li>Designed and implemented MongoDB schemas for efficient data storage and retrieval.</li> 
+              <li> Developed RESTful APIs with Express.js for seamless communication between frontend and backend.</li>
+              <li> Built interactive user interfaces using React for dynamic product browsing and shopping cart functionality.</li>
+              <li> Integrated user authentication and authorization features using JSON Web Tokens (JWT) for secure transactions.</li>
+            
+            </p>
+          </div>
+        </div>
+          <div class="project-btns">
+            <button class="btn btn-color-1" onclick="window.open('https://github.com/yourusername/project1', '_blank')">View Code</button>
+            <button class="btn btn-color-2" onclick="window.open('https://github.com/yourusername/project1', '_blank')">View Project</button>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-details">
+
+          <div class="project-img">
+            <img src="assets/project-2.png" alt="project-1">
+          </div>
+          <div class="project-sub-details">
+          <h3>ECHO - Your Personal Timecapsule</h3>
+          <p>
+
+            <li>Built a web application using React and Appwrite to securely store user’s thoughts and memories. </li>
+            <li>  Integrated RESTful API endpoints and managed state using Redux for seamless user experience and data consistency.</li> 
+
+          </p>
+          </div>
+        </div>
+          <div class="project-btns">
+            <button class="btn btn-color-1" onclick="window.open('https://github.com/yourusername/project1', '_blank')">View Code</button>
+            <button class="btn btn-color-2" onclick="window.open('https://github.com/yourusername/project1', '_blank')">View Project</button>
+          </div>
+        </div>
+        
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" />
+    </section>
+    
+    <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <i class="fa-regular fa-envelope fa-lg"></i>
+          <p><a href="mailto:examplemail@gmail.com">creatorvivek18@gmail.com</a></p>
+        </div>
+        
+        <div class="contact-info-container">
+          <i class="fa-solid fa-phone fa-lg"></i>
+          <p><a href="#contacts">+91 9204660511</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Vivek Kumar. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
